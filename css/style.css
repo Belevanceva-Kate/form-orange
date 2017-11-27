@@ -20,14 +20,14 @@ body {
     padding: 1% 0;
     position: relative;
     background: linear-gradient(45deg, #ff512f, #dd2476);
-    font-family: Arial, sens-serif;
+    font-family: Arial, sans-serif;
 }
 
 .form__container {
     max-width: 460px;
     width: 100%;
     min-height: auto;
-
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
     height: 470px;
     padding: 30px;
     background-color: #fff;
@@ -123,10 +123,19 @@ body {
     border-bottom: 4px solid #bd1962;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-transition: all .0s linear;
+       -moz-transition: all .0s linear;
+        -ms-transition: all .0s linear;
+         -o-transition: all .0s linear;
+            transition: all .0s linear;
 }
 
-.form__btn:hover,
-.form__btn:active,
-.form__btn:focus {
-    border-color: transparent;
+.form__btn:hover{
+    background-color: #ec4668;
 }
+
+.form__btn:active {
+    margin: 4px 0 0 0;
+    border-bottom: 0;
+}
+
